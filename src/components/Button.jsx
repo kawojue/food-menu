@@ -2,13 +2,13 @@ import { useContext } from 'react'
 import Context from './Context'
 
 const Button = () => {
-    const btns = ['all', 'breakfast', 'lunch', 'shakes']
-    const { filtered } = useContext(Context)
+    const { filtered, btns } = useContext(Context)
 
     return (
-        <section>
+        <section className="btn-container">
             {btns.map((btn, index) => (
-                <button key={index} onClick={() => filtered(btn)}>
+                <button key={index} className="btn"
+                    onClick={() => filtered(btn)}>
                     {btn}
                 </button>
             ))}
