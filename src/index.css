@@ -28,7 +28,7 @@ header div {
 }
 
 .btn-container article {
-    @apply flex gap-5;
+    @apply flex gap-3;
 }
 
 .btn {
@@ -38,3 +38,17 @@ header div {
 .btn:hover {
     @apply text-white bg-pry-clr-2;
 }
+
+.menu {
+    @apply px-10 w-full flex justify-center;
+}
+
+.menu article {
+    @apply grid gap-9 place-items-center;
+}
+
+.sub-menu {
+    @apply flex-col gap-5;
+}
+
+.image-container {}
