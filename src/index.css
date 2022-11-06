@@ -40,7 +40,7 @@ header div {
 }
 
 .menu {
-    @apply px-10 w-full flex justify-center;
+    @apply px-9 w-full flex justify-center;
 }
 
 .menu article {
@@ -48,7 +48,18 @@ header div {
 }
 
 .sub-menu {
-    @apply flex-col gap-5;
+    @apply flex flex-col gap-5;
 }
 
 .image-container {}
+
+
+@media screen and (min-width: 800px) {
+    .sub-menu {
+        flex-direction: row;
+    }
+
+    .menu {
+        @apply px-20;
+    }
+}
