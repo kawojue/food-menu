@@ -5,10 +5,10 @@ const Menu = () => {
     const { menu } = useContext(Context)
 
     return (
-        <section className="menu">
+        <section className="menu lg:px-16">
             <article className="lg:grid-cols-2">
                 {menu.map(item => (
-                    <div key={item.id} className="sub-menu md:flex">
+                    <div key={item.id} className="sub-menu">
                         <div className="img-container">
                             <img src={item.img} />
                         </div>
