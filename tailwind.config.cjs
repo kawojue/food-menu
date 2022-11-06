@@ -13,9 +13,9 @@ module.exports = {
         'pry-clr-3': 'rgb(97, 125, 152)'
       },
       screens: {
-        sm: "470px",
+        sm: "600px",
         md: "768px",
-        lg: "1000px"
+        lg: "1200px"
       }
     },
   },

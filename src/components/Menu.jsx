@@ -9,9 +9,7 @@ const Menu = () => {
             <article className="lg:grid-cols-2">
                 {menu.map(item => (
                     <div key={item.id} className="sub-menu">
-                        <div className="img-container">
-                            <img src={item.img} alt={item.title} />
-                        </div>
+                        <img src={item.img} alt={item.title} />
                         <div className="info">
                             <div className="headings">
                                 <h3>{item.title}</h3>
