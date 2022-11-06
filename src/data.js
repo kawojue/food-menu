@@ -1,4 +1,4 @@
-const menu = [{
+const data = [{
         id: 1,
         title: 'buttermilk pancakes',
         category: 'breakfast',
@@ -72,4 +72,4 @@ const menu = [{
     },
 ]
 
-export default menu
+export default data
