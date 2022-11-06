@@ -10,12 +10,12 @@ const Menu = () => {
                 {menu.map(item => (
                     <div key={item.id} className="sub-menu">
                         <div className="img-container">
-                            <img src={item.img} />
+                            <img src={item.img} alt={item.title} />
                         </div>
                         <div className="info">
                             <div className="headings">
                                 <h3>{item.title}</h3>
-                                <h5>{item.price}</h5>
+                                <h5>${item.price}</h5>
                             </div>
                             <p>{item.desc}</p>
                         </div>

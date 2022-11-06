@@ -51,15 +51,52 @@ header div {
     @apply flex flex-col gap-5;
 }
 
-.image-container {}
+.img-container {
+    @apply w-full h-[13rem] border-[0.25rem] border-pry-clr-2 overflow-hidden rounded-md;
+}
+
+.img-container img {
+    @apply w-full h-full object-cover;
+}
+
+.headings {
+    @apply flex justify-between w-full tracking-wider font-medium border-b-[0.125rem] border-b-pry-clr-3 border-dashed mb-3 border-spacing-4;
+}
+
+.headings h3 {
+    @apply capitalize text-pry-clr-1;
+}
+
+.headings h5 {
+    @apply text-pry-clr-2;
+}
+
+.info p {
+    @apply text-pry-clr-3 text-sm leading-[1.5rem] justify-self-center font-light;
+}
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+    .menu {
+        @apply w-full px-20;
+    }
+
     .sub-menu {
         flex-direction: row;
     }
 
-    .menu {
-        @apply px-20;
+
+    .img-container {
+        @apply h-[11rem]
+    }
+
+    .info p {
+        @apply text-[1rem]
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .sub-menu {
+        flex-direction: row;
     }
 }
