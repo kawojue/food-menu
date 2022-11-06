@@ -1,18 +1,19 @@
-import { createContext, useState } from 'react'
 import data from '../data'
+import { createContext, useState } from 'react'
+
 
 const Context = createContext({})
 
 export const DataContext = ({ children }) => {
-
     const [menu, setMenu] = useState(data)
+    const btns = ['all', 'breakfast', 'lunch', 'shakes']
 
     const filtered = (category) => {
-        const newMenu = data.filter(food => {
+        const newMenu = data.filter(item => {
             if (category === 'all') {
-                return food
+                return item
             } else {
-                return food.category === category
+                return item.category === category
             }
         })
 
@@ -21,7 +22,7 @@ export const DataContext = ({ children }) => {
 
     return (
         <Context.Provider value={{
-            menu, filtered
+            menu, filtered, btns
         }}>
             {children}
         </Context.Provider>
