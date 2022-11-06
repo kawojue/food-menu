@@ -7,6 +7,10 @@ main {
     @apply mt-20 mb-10;
 }
 
+.trans-all-linear {
+    @apply transition-all ease-linear duration-200;
+}
+
 header {
     @apply flex flex-col gap-3 items-center text-center mb-10;
 }
@@ -17,4 +21,20 @@ header h1 {
 
 header div {
     @apply bg-pry-clr-2 w-32 h-1.5 rounded-md;
+}
+
+.btn-container {
+    @apply flex w-full justify-center mb-10;
+}
+
+.btn-container article {
+    @apply flex gap-5;
+}
+
+.btn {
+    @apply capitalize text-pry-clr-2 px-3 py-1 rounded-md text-lg trans-all-linear;
+}
+
+.btn:hover {
+    @apply text-white bg-pry-clr-2;
 }
