@@ -6,12 +6,14 @@ const Button = () => {
 
     return (
         <section className="btn-container">
-            {btns.map((btn, index) => (
-                <button key={index} className="btn"
-                    onClick={() => filtered(btn)}>
-                    {btn}
-                </button>
-            ))}
+            <article className="md:gap-5">
+                {btns.map((btn, index) => (
+                    <button key={index} className="btn"
+                        onClick={() => filtered(btn)}>
+                        {btn}
+                    </button>
+                ))}
+            </article>
         </section>
     )
 }
