@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+
+main {
+    @apply mt-20 mb-10;
+}
+
+header {
+    @apply flex flex-col gap-3 items-center text-center mb-10;
+}
+
+header h1 {
+    @apply text-pry-clr-1 font-semibold text-3xl;
+}
+
+header div {
+    @apply bg-pry-clr-2 w-32 h-1.5 rounded-md;
+}
