@@ -6,20 +6,22 @@ const Menu = () => {
 
     return (
         <section className="menu">
-            {menu.map(item => (
-                <article key={item.id} className="sub-menu">
-                    <div className="img-container">
-                        <img src={item.img} />
-                    </div>
-                    <div className="info">
-                        <div className="headings">
-                            <h3>{item.title}</h3>
-                            <h5>{item.price}</h5>
+            <article className="lg:grid-cols-2">
+                {menu.map(item => (
+                    <div key={item.id} className="sub-menu md:flex">
+                        <div className="img-container">
+                            <img src={item.img} />
                         </div>
-                        <p>{item.desc}</p>
+                        <div className="info">
+                            <div className="headings">
+                                <h3>{item.title}</h3>
+                                <h5>{item.price}</h5>
+                            </div>
+                            <p>{item.desc}</p>
+                        </div>
                     </div>
-                </article>
-            ))}
+                ))}
+            </article>
         </section>
     )
 }
