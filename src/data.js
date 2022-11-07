@@ -16,10 +16,10 @@ const data = [{
     },
     {
         id: 3,
-        title: 'godzilla milkshake',
+        title: 'steak veg',
         category: 'shakes',
         price: 6.99,
-        img: '../images/item-3.jpeg',
+        img: '../images/item-10.jpeg',
         desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
     },
     {
